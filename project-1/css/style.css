@@ -1,0 +1,79 @@
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #333;
+  }
+
+  #rgb-border{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    width: calc(100% - 42px);
+    height: calc(100% - 42px);
+    border: 2px solid transparent;
+    animation: rgb-fx 6s linear infinite;
+}
+
+@keyframes rgb-fx {
+  0% {
+    border-color: red;
+  }
+  20% {
+    border-color: orange;
+  }
+  40% {
+    border-color: yellow;
+  }
+  60% {
+    border-color: green;
+  }
+  80% {
+    border-color: blue;
+  }
+  100% {
+    border-color: indigo;
+  }
+}
+
+.navi{
+    position: relative;
+    top: 20px;
+    width: 50%;
+    height: 10%;
+    margin: auto;
+    background-color: red;
+    border-radius: 30px;
+    transform: skew(-40deg);
+}
+
+#menu{
+    transform: skew(40deg);
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 40%;
+    width: calc(100% - 20px);
+    height: 30px;
+    margin-left: 10px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opt{
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: 000;
+  margin: 0 100px;
+  font-size: 30px;
+}
+
+.opt:hover {
+    color: #fff; /* change the text color on hover */
+    background-color: #000; /* add background color on hover */
+    padding: 10px 20px; /* add padding to create a box-like effect */
+    border-radius: 5px; /* add rounded corners to the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* add a shadow effect to the box */
+    transform: scale(1.2);
+  }
